@@ -1,0 +1,78 @@
+/* Write your code here. */
+/* Hex: #1d976c
+Hex: #93f9b9
+Hex: #ffffff
+Hex: #e4e7eb
+Hex: #219a6f */
+/* Font-families:Roboto */
+
+.bg-container {
+  background: linear-gradient(to right, #219a6f, #93f9b9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid #ffffff; */
+  padding: 10px;
+  min-height: 100vh;
+  font-family: 'Roboto';
+}
+.calculate-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  order: 1;
+}
+
+.title {
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  font-size: 25px;
+}
+.disc {
+  margin-bottom: 4px;
+  color: #ffffff;
+  font-size: 14px;
+}
+.input-text {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+  outline: none;
+  color: #ffffff;
+  background-color: transparent;
+}
+.display-no-of-letters {
+  background-color: #ffffff;
+  margin-top: 10px;
+  padding: 15px;
+  color: #219a6f;
+  border-radius: 10px;
+}
+.cal-img {
+  text-align: center;
+  width: 100%;
+  order: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .bg-container {
+    flex-direction: row;
+  }
+  .calculate-container {
+    order: 0;
+    align-items: flex-start;
+  }
+  .title {
+    text-align: left;
+    font-size: 35px;
+  }
+  .disc {
+    font-size: 12px;
+  }
+  .cal-img {
+    width: 100%;
+  }
+}
